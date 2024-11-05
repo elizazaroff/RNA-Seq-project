@@ -7,4 +7,4 @@ Experimental Design: One strain grown in presence of thiamine; one strain grown 
 
 Analysis goals:
 
-Data files: I'll be analyzing the WTC2_1.fq.gz and WTC2_2.fq.gz read pair. 
+Data files: I'll be analyzing the WTC2_1.fq.gz and WTC2_2.fq.gz read pair. I'll be using NCBI's reference genome sequence and gtf annotation file for Candida albicans (GCF_000182965.3). 
