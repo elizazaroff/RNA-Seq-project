@@ -8,7 +8,7 @@ Using the FASTQC results, I designed a trimmomatic script ("Trimmomatic Script 1
 
 ## Map (align) reads to reference: Bowtie2
 11/5: 
-Used bowtie2/2.3.5 to align reads—WTC2_1_trPE.fq and WTC2_2_trPE.fq—to the reference genome, using the script "Bowtie Script 11.5."
+Used bowtie2/2.3.5 to align the trimmed reads—WTC2_1_trPE.fq and WTC2_2_trPE.fq—to the reference genome, using the script "Bowtie Script 11.5."
 The refseq genome sequence and gtf annotation file for Candida albicans was GCF_000182965.3, accessed from NCBI. The filenames were GCF_000182965.3_ASM18296v3_genomic.fna.gz and GCF_000182965.3_ASM18296v3_genomic.gtf.gz. 
 
 
