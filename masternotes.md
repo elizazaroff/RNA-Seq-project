@@ -1,4 +1,4 @@
-# Where I keep track of my project
+# Master Notes
 
 ## Quality Control: FastQC & Trimmomatic
 10/31: 
