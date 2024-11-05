@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name=bowtie.SBATCH --output=z01.%x
+#SBATCH --mail-type=END,FAIL --mail-user=erz12@georgetown.edu
+#SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1 --time=72:00:00
+#SBATCH --mem=4G
+
+# Input files
+READ1=WTC2_1_trPE.fq
+READ2=WTC2_2_trPE.fq
+REFERENCE_INDEX=reference_genome_index
+
+# Output file with unique name
+OUTPUT_FILE=WTC1.sam
+
+# Run Bowtie2 alignment
+module load bowtie2/2.5.3
+bowtie2 -x $REFERENCE_INDEX -1 $READ1 -2 $READ2 -S $OUTPUT_FILE
+
+module unload bowtie2
