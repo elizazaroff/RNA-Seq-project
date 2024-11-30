@@ -1,0 +1,42 @@
+#!/bin/bash
+#SBATCH --job-name=htseq_count
+#SBATCH --output=z01.%x.out
+#SBATCH --mail-type=END,FAIL
+#SBATCH --mail-user=erz12@georgetown.edu
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+#SBATCH --time=72:00:00
+#SBATCH --mem=8G
+
+#-------------------------------------------------------------#
+# This script uses HTSeq to count and assign reads to genes   #
+#-------------------------------------------------------------#
+
+# Activate the HTSeq conda environment
+source activate htseq
+
+# Set variables
+htseq_cmd=/home/erz12/.conda/envs/htseq/bin/htseq-count
+input_bam=/home/erz12/RNA_SEQ/WTC2.srt.bam
+annotation_gtf=/home/erz12/RNA_SEQ/GCF_000182965.3_ASM18296v3_genomic.gtf
+output_counts="WTC2_htseqCount"
+
+
+# Run HTSeq-count
+echo "Running HTSeq-count on ${input_bam} with annotations from ${annotation_gtf}"
+${htseq_cmd} \
+    -f bam \
+    -r pos \
+    -s no \
+    -i gene_id \
+    -t exon \
+    ${input_bam} \
+    ${annotation_gtf} \
+    > ${output_counts}
+
+# Notify completion
+echo "HTSeq-count finished. Output saved to ${output_counts}"
+
+# Deactivate the conda environment
+conda deactivate
