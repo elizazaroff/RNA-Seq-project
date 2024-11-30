@@ -8,7 +8,7 @@ Candida albicans: a commensal yeast that that can cause a variety of pathologies
 One strain grown in presence of thiamine; one strain grown in the absense of thiamine. There are three biological replicates for each condition, with two read pairs for each replicate, resulting in 12 total sequence files: 
 <img width="438" alt="image" src="https://github.com/user-attachments/assets/08aced93-4d6d-46db-ba2c-77d6e75795ac">
 
-I specifically focused on analyzing the read pair WTC_1 and WTC_2. 
+I specifically focused on analyzing the read pair WTC2_1.fq.gz and WTC2_2.fq.gz. 
 
 ## Analysis goals
 - Quality control (QC)
