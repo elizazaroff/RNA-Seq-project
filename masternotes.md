@@ -18,5 +18,9 @@ The refseq genome sequence and gtf annotation file for Candida albicans was GCF_
 
 
 ## Count Reads per gene model: HTseq
+11/17
+
+Used HTseq to count and assign reads to genes. After sorting the Bam file (the output from bowtie alignment), we ran it, along with the annotated GTF file (GCF_000182965.3_ASM18296v3_genomic.gtf), through HTseq using the script "HTseq Script 11.17."
+
 ## Differential expression analysis: DEseq2 in R
 ## Gene Ontology Enrichment Analysis
