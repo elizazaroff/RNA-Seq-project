@@ -18,7 +18,7 @@ The refseq genome sequence and gtf annotation file for Candida albicans was GCF_
 
 
 ## Count Reads per gene model: HTseq
-11/17
+11/17:
 
 I used samtools to convert the sam file (the output from the bowtie alignment) to a bam file, as well as sort and index the bam file. To count and assign reads to genes, I ran the sorted, indexed bam file along with the annotated GTF file (GCF_000182965.3_ASM18296v3_genomic.gtf) through HTseq using the script "HTseq Script 11.17."
 
