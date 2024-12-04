@@ -1,4 +1,4 @@
-# Master Notes
+![image](https://github.com/user-attachments/assets/208d1e56-1057-4de2-9bbe-079ef31ef66c)![image](https://github.com/user-attachments/assets/9b10afa2-e4c4-426f-b86f-6176d0757e3b)# Master Notes
 
 ## Quality Control: FastQC & Trimmomatic
 10/31: 
@@ -25,4 +25,9 @@ Link to google sheet summarizing the alignment results for all the data files: h
 I used samtools to convert the sam file (the output from the bowtie alignment) to a bam file, as well as sort and index the bam file. To count and assign reads to genes, I ran the sorted, indexed bam file along with the annotated GTF file (GCF_000182965.3_ASM18296v3_genomic.gtf) through HTseq using the script "HTseq Script 11.17."
 
 ## Differential expression analysis: DEseq2 in R
+11/26:
+
+To identify and measure differential expression analysis, I compiled all of the HTseq output files from the experiment (WTA2_htseqCount, WTB2_htseqCount, WTC2_htseqCount, WTB1_htseqCount, WTC1_htseqCount, WTA1_htseqCount), and analyzed them in R using "R Script 11.26." The output included two summary Excel sheets (Sig. genes, all genes), a PCA plot, and a Volcano plot, and can be found in the folder "R Output Files." 
+
+
 ## Gene Ontology Enrichment Analysis
