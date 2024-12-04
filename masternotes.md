@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/208d1e56-1057-4de2-9bbe-079ef31ef66c)![image](https://github.com/user-attachments/assets/9b10afa2-e4c4-426f-b86f-6176d0757e3b)# Master Notes
+# Master Notes
 
 ## Quality Control: FastQC & Trimmomatic
 10/31: 
