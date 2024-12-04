@@ -33,3 +33,6 @@ To elucidate the biological significance of the upregulation of the genes under 
 
 
 ## Gene Ontology Enrichment Analysis
+12/3:
+
+To gain a higher-level understanding of the biological changes occurring under thiamine-absent conditions, I performed a Gene Ontology (GO) enrichment analysis on the genes that were significantly upregulated. I used Panther to run a Fisher's Exact test, using the "GO biological process complete" annotation data set and calculating the False Discovery Rate. The output file from the GO enrichment analysis can be found in the "GO Analysis Output" folder. 
