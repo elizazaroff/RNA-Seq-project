@@ -1,4 +1,4 @@
-# Master Notes
+![image](https://github.com/user-attachments/assets/3a750fe6-0a57-417f-8ffa-eecbdcafd439)# Master Notes
 
 ## Quality Control: FastQC & Trimmomatic
 10/31: 
@@ -27,7 +27,11 @@ I used samtools to convert the sam file (the output from the bowtie alignment) t
 ## Differential expression analysis: DEseq2 in R
 11/26:
 
-To identify and measure differential expression analysis, I compiled all of the HTseq output files from the experiment (WTA2_htseqCount, WTB2_htseqCount, WTC2_htseqCount, WTB1_htseqCount, WTC1_htseqCount, WTA1_htseqCount), and analyzed them in R using "R Script 11.26." The output included two summary Excel sheets (Sig. genes, all genes), a PCA plot, and a Volcano plot, and can be found in the folder "R Output Files." 
+To identify and measure differential expression analysis, I compiled all of the HTseq output files from the experiment (WTA2_htseqCount, WTB2_htseqCount, WTC2_htseqCount, WTB1_htseqCount, WTC1_htseqCount, WTA1_htseqCount), and analyzed them in R using "R Script 11.26." 
+
+The R output included two summary Excel sheets (Sig. genes, all genes), a PCA plot, and a Volcano plot, and can be found in the folder "R Output Files." 
+
+To elucidate the biological significance of the upregulation of the genes under thiamine-absent conditions, I combined information from the GTF file with information from DESeq2, using locus tags to align the data. Using the gene names and gene IDs pulled from the GTF file, I researched the genes that were significantly upregulated and created a summary table with notes on the biological function of each of these genes, which can be found in the "R Output Files" folder. 
 
 
 ## Gene Ontology Enrichment Analysis
