@@ -23,3 +23,12 @@ I specifically focused on analyzing the read pair WTC2_1.fq.gz and WTC2_2.fq.gz.
 
 ## Data files
 I analyzed the WTC2_1.fq.gz and WTC2_2.fq.gz read pair from the class google bucket. I used NCBI's reference genome sequence and gtf annotation file for Candida albicans (GCF_000182965.3). 
+
+## Results and Interpretation 
+Volcano Plot:
+
+PCA Plot:
+
+Summary Table: 
+
+GO Enrichment Analysis: 
