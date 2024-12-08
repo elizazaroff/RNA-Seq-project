@@ -28,6 +28,8 @@ I analyzed the WTC2_1.fq.gz and WTC2_2.fq.gz read pair from the class google buc
 
 ## Results and Interpretation 
 Volcano Plot:
+The volcano plot reveals that a small subset of genes (13 total), located on the right side of the x-axis (positive Log₂FC), meets both statistical significance and fold-change thresholds (red points).
+From this plot, I identified these genes as likely core players in thiamine-deprivation responses and that they are of high interest for further investigation.
 
 PCA Plot:
 
