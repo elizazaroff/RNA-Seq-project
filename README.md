@@ -32,35 +32,26 @@ I analyzed the WTC2_1.fq.gz and WTC2_2.fq.gz read pair from the class google buc
 
 The PCA (Principal Component Analysis) plot reveals a clear separation between thiamine-present (THI+) and thiamine-absent (THI-) conditions in the C. albicans samples. Specifically, there is a clear vertical separation between the thiamine-absent and thiamine-present conditions (indicated by the blue vs red dots), which suggests distinct transcriptional profiles. The high percentage of variance explained by PC1 (88%) indicates that thiamine availability is the dominant factor driving gene expression differences in this experiment. The secondary component explains a smaller (9%) portion of the variance, likely reflecting individual sample variation or biological/technical noise. Additionally, the separation along PC1 between THI+ and THI- conditions highlights a significant difference in gene expression driven by the presence or absence of thiamine, and the minimal overlap between the two groups underscores the reliability of the experimental design and the reproducibility of the RNA-seq data. In terms of replicate consistency, replicates for both THI+ and THI- conditions cluster tightly, which indicates low variability within each treatment group. This suggests high-quality RNA-seq data and consistent experimental conditions. In conclusion, since PC1 accounts for the vast majority of variance (88%), it is likely dominated by the presence versus absence of thiamine rather than by subtle differences within replicates or noise, further confirming that thiamine availability induces substantial changes in global gene expression in C. albicans. 
 
-Volcano Plot:
+### Volcano Plot:
 
 The volcano plot allowed us to identify specific genes that are both biologically meaningful and statistically significant, revealing that there are several significant changes in gene expression between the strains grown in the absence of thiamine and the strains grown in the presence of thiamine. Specifically, a subset of genes (13 total) are represented by red dots, indicating that they pass both the log2 fold change threshold and the statistical significance threshold. These genes are, therefore, significantly upregulated in the thiamine-absent condition compared to the thiamine-present condition, with some genes showing very high statistical significance (-log10(p-adjusted) > 100) and substantial fold changes (log2FC > 5). Therefore, these 13 genes are likely core players in thiamine-deprivation responses and are of high interest for further investigation.
 
-Summary Table: 
+### Summary Table: 
 
 The summary table shows gene annotations from both the Candida Genome and UniProt databases for the 13 significantly differentially expressed genes in the thiamine study, allowing us to elucidate the biological significance of each gene on an individual level. From the table, it is clear that multiple genes are involved in thiamine biosynthesis and pyridoxine (vitamin B6) synthesis pathways, and several genes encode phosphatases and synthases specific to thiamine metabolism. This makes sense, as the strain is likely trying to compensate for being in a thiamine-deprived environment. Some of the genes also serve as thiamine and amino acid transporters, as well as membrane-associated transport proteins, though research into the characterization of these genes remains limited. Interestingly, several genes are marked as "Spider biofilm induced," suggesting a connection between thiamine metabolism and biofilm formation. Therefore, the gene functions strongly support the experimental focus on thiamine metabolism and suggest broader connections to vitamin B synthesis pathways and biofilm formation in C. albicans. In other words, the table demonstrates that thiamine deprivation triggers a complex transcriptional response involving not just thiamine-specific pathways but also broader vitamin B metabolism and virulence-associated functions in C. albicans.
 
-GO Enrichment Analysis: 
+### GO Enrichment Analysis: 
 
 The enrichment analysis allowed us to group the 13 significantly upregulated genes into broader biological processes and pathways, elucidating the specific biological processes affected by thiamine availability in C. albicans. 
 
-The primary enriched pathways included thiamine-related processes, which show very high enrichment (>100 fold), and thiamine-related pathways show extremely significant FDR values (<1.67E-07). Vitamin B complex-related processes were also a primary enriched pathway, with vitamin B6 biosynthetic process showing strong enrichment (>100 fold), pyridoxine biosynthetic and metabolic processes showing significant enrichment, and water-soluble vitamin metabolic processes showing high fold enrichment (60.55). 
+The primary enriched pathways included thiamine-related processes, with the thiamine biosynthetic process showing >100 fold enrichment with extremely low FDR (1.11E-07), thiamine metabolic process and thiamine-containing compound pathways also showing >100 fold enrichment, and while these pathways only involve 4-6 genes, they show very high statistical significance (p-values ~10^-10). Vitamin B6 pathways were also notably enriched, with the pyridoxine biosynthetic process showing >100 fold enrichment and the pyridoxal phosphate biosynthetic process showing >100 fold enrichment with FDR of 9.19E-03. 
 
-Secondary Pathways
-Alcohol Metabolism
-Primary alcohol biosynthetic process (>100 fold enrichment)
-Alcohol metabolic process (15.22 fold enrichment)
-Secondary alcohol biosynthetic process (11.12 fold enrichment)
-Other Metabolic Processes
-Organic hydroxy compound biosynthetic process (22.00 fold enrichment)
-Small molecule metabolic process (6.11 fold enrichment)
-Ergosterol biosynthetic process (11.25 fold enrichment)
+The secondary enriched pathways included alcohol metabolism, with the primary alcohol biosynthetic process having >100 fold enrichment, the alcohol metabolic process having 15.22 fold enrichment, and the secondary alcohol biosynthetic process having 11.12 fold enrichment. Other metabolic processes included organic hydroxy compound biosynthetic process (22.00 fold enrichment), small molecule metabolic process (6.11 fold enrichment), and ergosterol biosynthetic process (11.25 fold enrichment). 
 
-Statistical Significance
-Highly Significant Pathways
-Multiple pathways show very low FDR values (<1E-07)
-Strong p-values (many at 6.47E-11 or lower)
-Fold enrichment values >100 for key thiamine and vitamin-related processes
-This enrichment analysis confirms that thiamine deprivation triggers a coordinated transcriptional response affecting multiple interconnected metabolic pathways, with thiamine and vitamin B-related processes being the most significantly affected.
+In summary, there are several highly significant pathways, with multiple pathways showing very low FDR values (<1E-07), strong p-values (many at 6.47E-11 or lower), and fold enrichment values >100 for key thiamine and vitamin-related processes. From the analysis, it is evident that C. albicans appears to upregulate key metabolic and biosynthetic processes to adapt to thiamine deprivation, specifically by activating endogenous thiamine production and salvage pathways as well as reprogramming small molecule metabolism, including pyrimidines and sulfur compounds. The data reaffirms thiamine's importance not only in primary metabolism but also in reducing oxidative stress and maintaining cellular redox balance. On a broader level, this enrichment analysis confirms that thiamine deprivation triggers a coordinated transcriptional response affecting multiple interconnected metabolic pathways, with thiamine and vitamin B-related processes being the most significantly affected. The enrichment patterns suggest a hierarchical response where thiamine deprivation primarily affects vitamin B-related processes, followed by broader metabolic adaptations in alcohol and sterol metabolism.
 
 ## Conclusion
+
+Enrichment of thiamine-related biosynthesis and metabolic pathways suggests potential antifungal strategies:
+Targeting enzymes involved in thiamine biosynthesis could weaken C. albicans in thiamine-depleted environments (e.g., infection sites).
+Inhibiting stress-related metabolic pathways (e.g., organic hydroxy compound metabolism) may enhance fungal susceptibility to host defenses.
