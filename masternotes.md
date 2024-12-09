@@ -22,7 +22,7 @@ Link to google sheet summarizing the alignment results for all the data files: h
 ## Count Reads per gene model: HTseq
 11/17:
 
-I used samtools to convert the sam file (the output from the bowtie alignment) to a bam file, as well as sort and index the bam file. To count and assign reads to genes, I ran the sorted, indexed bam file along with the annotated GTF file (GCF_000182965.3_ASM18296v3_genomic.gtf) through HTseq using the script "HTseq Script 11.17."
+I used samtools to convert the sam file (the output from the bowtie alignment: WTC2.sam) to a bam file (WTC2.bam), as well as sort and index the bam file (WTC2.srt.bam.bai). To count and assign reads to genes, I ran the sorted bam file (WTC2.srt.bam) along with the annotated GTF file (GCF_000182965.3_ASM18296v3_genomic.gtf) through HTseq using the script "HTseq Script 11.17."
 
 ## Differential expression analysis: DEseq2 in R
 11/26:
